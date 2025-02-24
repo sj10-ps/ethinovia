@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Details - Ethinovia</title>
+    <style>
+        /* Reset some default styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Main body style */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: rgb(2, 2, 46);
+            color: white;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Header */
+        header {
+            background-color: #003366;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+            color: #ffffff;
+        }
+
+        header h2 {
+            font-size: 20px;
+            color: #ffffff;
+            margin-top: 10px;
+        }
+
+        /* Main content */
+        .service-content {
+            margin: 40px 20px;
+            background-color: #1e1e3f;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .service-title {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ff8c00;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .minimal-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .minimal-button:hover {
+            background-color: #0056b3;
+        }
+
+        .service-title, .service-content {
+            animation: fadeIn 1s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Footer */
+        footer {
+            margin-top: auto;
+            background-color: #003366;
+            padding: 10px 0;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        
+        <h1>Ethinovia</h1>
+        <h2>Your Infrastructure, Our Expertise</h2>
+    </header>
+
+    <div id="service-detail" class="service-content">
+        <!-- Service content will be injected here dynamically -->
+    </div>
+
+    <a href="home.html#services" class="minimal-button">Go Back to Services</a>
+
+    <footer>
+        <p>&copy; Ethinovia. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Dictionary storing the services data
+        const servicesData = {
+            "highways": {
+                title: "Highways, Urban Roads & Expressways",
+                points: [
+                    "Feasibility, Detailed Project Reports (DPR)",
+                    "Detailed Engineering Design",
+                    "Construction Supervision and Proof Checking",
+                    "Urban Transport Planning",
+                    "GIS Mapping analysis",
+                    "Traffic and Transportation Studies",
+                    "Economic and Financial Analysis",
+                    "Pavement Investigation and Geotechnical Investigation",
+                    "Environmental Impact Assessment, Environmental Management and Social Impact Studies (EIA, SIA & EMP)",
+                    "Hydrological Studies and Drainage Design",
+                    "Cost Estimation",
+                    "Tendering/ Prebid Services"
+                ]
+            },
+            "railways": {
+                title: "Railways and Airports",
+                points: [
+                    "Feasibility Studies & Detailed Project Reports (DPR) for new rail corridors",
+                    "Railway Alignment & Track Design for high-speed, metro, and freight railways",
+                    "Station & Terminal Planning for passenger and cargo operations",
+                    "Electrification & Signaling System Design for efficient rail operations",
+                    "Runway & Taxiway Design & Optimization for better air traffic handling",
+                    "Terminal Design & Passenger Flow Management for enhanced efficiency",
+                    "Apron & Ground Handling Facility Planning for seamless operations",
+                    "Cargo Terminal & Logistics Planning for freight handling efficiency"
+                ]
+            },
+            "roadSafety": {
+                title: "Road Safety Audit",
+                points: [
+                    "Hazard detection and risk assessment",
+                    "Preparation of Road Safety Audit Report",
+                    "Application of Machine learning for accident prediction",
+                    "Application of AI technology on detection of Traffic violation",
+                    "Conducting Road Safety Awareness programme"
+                ]
+            },
+            "architectural": {
+                title: "Architectural Services",
+                points: [
+                    "Conceptual & Schematic Design",
+                    "Master Planning & Urban Design",
+                    "3D Visualization & Rendering",
+                    "Sustainable & Green Building Design",
+                    "BIM (Building Information Modeling) Implementation",
+                    "Site Planning & Supervision",
+                    "Cost Estimation & Budgeting",
+                    "Quality Assurance & Material Selection"
+                ]
+            },
+            "valueEngineering": {
+                title: "Value Engineering",
+                points: [
+                    "Identifying cost-saving alternatives in design and materials",
+                    "Life Cycle Cost Analysis (LCCA) for long-term sustainability",
+                    "Value-based material selection and procurement",
+                    "Identifying and mitigating project risks early",
+                    "Enhancing durability and maintainability of infrastructure"
+                ]
+            },
+            "irrigation": {
+                title: "Irrigation Network Planning and Analysis",
+                points: [
+                    "Canal & Pipeline Network Design for efficient water distribution",
+                    "Surface & Subsurface Drainage Planning to prevent waterlogging",
+                    "Micro-Irrigation System Design (Drip & Sprinkler) for water conservation",
+                    "Command Area Development (CAD) for optimal land utilization",
+                    "Watershed & Catchment Area Analysis for sustainable water flow management",
+                    "Hydraulic Modeling & Simulation for canal and pipeline efficiency",
+                    "Design & Rehabilitation of Dams, Barrages, & Weirs",
+                    "Construction & Optimization of Pumping Stations & Reservoirs",
+                    "Flood Risk Assessment & Mitigation Strategies",
+                    "Water Conservation & Groundwater Recharge Planning",
+                    "Rainwater Harvesting & Storage Solutions",
+                    "Integrated Water Resource Management (IWRM)"
+                ]
+            },
+            "intelligentTransport": {
+                title: "Intelligent Transport System",
+                points: [
+                    "Automated Vehicle Counting & Classification (ATCC) using AI",
+                    "Accident & Hazard Prediction Systems for proactive safety measures",
+                    "Speed & Red Light Violation Detection with advanced monitoring",
+                    "Predictive Analytics for Traffic Trends",
+                    "GIS & Remote Sensing for Transport Planning",
+                    "R&D in AI applications of transportation systems"
+                ]
+            }
+        };
+
+        // Function to display the selected service details
+        function displayServiceDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const serviceId = urlParams.get("id");
+
+            // Find the service data based on the passed id
+            const service = servicesData[serviceId];
+
+            if (service) {
+                // Create the content for the service
+                const serviceDetailDiv = document.getElementById("service-detail");
+                let serviceHTML = `
+                    <div class="service-title">${service.title}</div>
+                    <ul>
+                `;
+
+                // Loop through the points and add them as list items
+                service.points.forEach(point => {
+                    serviceHTML += `<li>${point}</li>`;
+                });
+
+                serviceHTML += `</ul>`;
+
+                // Display the service details
+                serviceDetailDiv.innerHTML = serviceHTML;
+            } else {
+                // If no matching service, display a message
+                document.getElementById("service-detail").innerHTML = "<p>Service not found.</p>";
+            }
+        }
+
+        // Run the function to display service details when the page loads
+        displayServiceDetails();
+    </script>
+
+</body>
+</html>
