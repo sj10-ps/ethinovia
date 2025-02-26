@@ -1,260 +1,590 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service Details - Ethinovia</title>
-    <style>
-        /* Reset some default styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+  <style>
+    .footer-top .row {
+  display: flex;
+  justify-content: space-between;
+}
 
-        /* Main body style */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: rgb(2, 2, 46);
-            color: white;
-            margin: 0;
-            padding: 0;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
 
-        /* Header */
-        header {
-            background-color: #003366;
-            padding: 20px 0;
-            text-align: center;
-        }
+.footer-links {
+  text-align: right; /
 
-        header h1 {
-            font-size: 36px;
-            color: #ffffff;
-        }
+}
 
-        header h2 {
-            font-size: 20px;
-            color: #ffffff;
-            margin-top: 10px;
-        }
+.footer-links ul {
+  list-style: none;
+  padding: 0;
 
-        /* Main content */
-        .service-content {
-            margin: 40px 20px;
-            background-color: #1e1e3f;
-            padding: 20px;
-            border-radius: 8px;
-        }
+}
 
-        .service-title {
-            font-size: 28px;
-            font-weight: bold;
-            color: #ff8c00;
-            margin-bottom: 15px;
-        }
+.footer-links ul li {
 
-        ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
+  margin-bottom: 8px;
+}
 
-        li {
-            margin-bottom: 10px;
-            font-size: 16px;
-            line-height: 1.6;
-        }
+.footer-links ul li a {
+  color: #fff; 
+  text-decoration: none;
+}
 
-        .minimal-button {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-            transition: background-color 0.3s;
-        }
+.footer-links ul li a:hover {
+  text-decoration: underline;
 
-        .minimal-button:hover {
-            background-color: #0056b3;
-        }
 
-        .service-title, .service-content {
-            animation: fadeIn 1s ease-out;
-        }
+}
 
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
+  </style>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-        /* Footer */
-        footer {
-            margin-top: auto;
-            background-color: #003366;
-            padding: 10px 0;
-            text-align: center;
-            font-size: 14px;
-            color: #fff;
-        }
-    </style>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+
+  <link href="img/logo_processed.jpg" rel="icon">
+
+
+  <!-- Fonts -->
+
+
+
+  <!-- preset CSS Files -->
+  <link href=" preset/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href=" preset/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href=" preset/aos/aos.css" rel="stylesheet">
+  <link href=" preset/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href=" preset/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href=" preset/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href=" css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/button.css">
+
+
 </head>
+
 <body>
 
-    <header>
-        
-        <h1>Ethinovia</h1>
-        <h2>Your Infrastructure, Our Expertise</h2>
-    </header>
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-    <div id="service-detail" class="service-content">
-        <!-- Service content will be injected here dynamically -->
+      <a href="#home" class="logo d-flex align-items-center">
+
+        <img src="img/logo.jpg" alt="" width="40px">
+
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#our_company">Our Company</a></li>
+
+
+
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">contact</a></li>
+
+          <li class="dropdown"><a href="#"><span>Navigate</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#our_company">Our Company</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">contact</a></li>
+            </ul>
+          </li>
+     
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+    </div>
+  </header>
+
+<section id="home" class="hero section dark-background">
+
+  <div class="info d-flex align-items-center">
+    <div style="width:100%;" >
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-6 text-center">
+          <h2 style="font-size:26px;width: 100%;">  Welcome To ETHINOVIA Consultancy Private Limited</h2>
+        
+          <p style="font-size: 20px;text-align: center">🚀 Innovating Infrastructure, Empowering Roads, Ensuring Safety 🚦<br> </p>  
+       
+            <p style="font-size: 20px;text-align: left">  ETHINOVIA is a multi-disciplinary consulting firm providing expert solutions in design, planning, engineering, consulting, and construction management for:
+            </p>
+          <ul type="none" style="font-size: 20px;text-align: left">
+              <li>✔ Highways & Bridges</li>
+              <li>✔ Railways & Airports</li>
+              <li>✔ Urban Development</li>
+              <li>✔ Environmental Engineering & Social Issues</li>
+              <li>✔ Capacity Building</li>
+        
+          </ul>
+
+          <p style="font-size: 20px;font-size: 20px;text-align: left">
+              We specialize in Road Safety Audits, conducting road safety awareness programs, and leveraging AI applications in transportation to enhance safety and efficiency. Backed by robust technical expertise, we are committed to delivering sustainable, smart, and innovative solutions for a better tomorrow. <br>
+       
+              📞 Partner with us for a safer, smarter future!
+          </p>
+          <a href="#our_company" class="btn-get-started">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+    <div class="carousel-item">
+      <img src="img/carousel/carousel-1.jpg" alt="">
     </div>
 
-    <a href="index.html#services" class="minimal-button">Go Back to Services</a>
+    <div class="carousel-item active">
+      <img src="img/carousel/carousel-2.jpg" alt="">
+    </div>
 
-    <footer>
-        <p>&copy; Ethinovia. All rights reserved.</p>
-    </footer>
+    <div class="carousel-item">
+      <img src="img/carousel/carousel-3.jpg" alt="">
+    </div>
 
-    <script>
-        // Dictionary storing the services data
-        const servicesData = {
-            "highways": {
-                title: "Highways, Urban Roads & Expressways",
-                points: [
-                    "Feasibility, Detailed Project Reports (DPR)",
-                    "Detailed Engineering Design",
-                    "Construction Supervision and Proof Checking",
-                    "Urban Transport Planning",
-                    "GIS Mapping analysis",
-                    "Traffic and Transportation Studies",
-                    "Economic and Financial Analysis",
-                    "Pavement Investigation and Geotechnical Investigation",
-                    "Environmental Impact Assessment, Environmental Management and Social Impact Studies (EIA, SIA & EMP)",
-                    "Hydrological Studies and Drainage Design",
-                    "Cost Estimation",
-                    "Tendering/ Prebid Services"
-                ]
+    <div class="carousel-item">
+      <img src="img/carousel/carousel-4.jpg" alt="">
+    </div>
+
+    <div class="carousel-item">
+      <img src="img/carousel/carousel-5.jpg" alt="">
+    </div>
+
+    <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+    </a>
+
+    <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+    </a>
+
+  </div>
+
+</section>
+
+
+
+
+
+<section id="our_company" class="testimonials section" style="background-color:rgb(2, 2, 46);">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up"   >
+    <h2 style="color: rgb(238, 124, 10);">GOALS</h2>
+    <p style="color: white; font-size: 20px;text-align: left;">To explore all engineering solutions and 
+      prove expertise in the design of safe and  
+      sustainable transport system, buildings 
+      like industrial, commercial, residential
+      and retrofitting projects.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+    <div class="swiper init-swiper">
+      <script type="application/json" class="swiper-config">
+          {
+            "loop": true,
+            "speed": 600,
+            "autoplay": {
+              "delay": 5000
             },
-            "railways": {
-                title: "Railways and Airports",
-                points: [
-                    "Feasibility Studies & Detailed Project Reports (DPR) for new rail corridors",
-                    "Railway Alignment & Track Design for high-speed, metro, and freight railways",
-                    "Station & Terminal Planning for passenger and cargo operations",
-                    "Electrification & Signaling System Design for efficient rail operations",
-                    "Runway & Taxiway Design & Optimization for better air traffic handling",
-                    "Terminal Design & Passenger Flow Management for enhanced efficiency",
-                    "Apron & Ground Handling Facility Planning for seamless operations",
-                    "Cargo Terminal & Logistics Planning for freight handling efficiency"
-                ]
+            "slidesPerView": "auto",
+            "pagination": {
+              "el": ".swiper-pagination",
+              "type": "bullets",
+              "clickable": true
             },
-            "roadSafety": {
-                title: "Road Safety Audit",
-                points: [
-                    "Hazard detection and risk assessment",
-                    "Preparation of Road Safety Audit Report",
-                    "Application of Machine learning for accident prediction",
-                    "Application of AI technology on detection of Traffic violation",
-                    "Conducting Road Safety Awareness programme"
-                ]
-            },
-            "architectural": {
-                title: "Architectural Services",
-                points: [
-                    "Conceptual & Schematic Design",
-                    "Master Planning & Urban Design",
-                    "3D Visualization & Rendering",
-                    "Sustainable & Green Building Design",
-                    "BIM (Building Information Modeling) Implementation",
-                    "Site Planning & Supervision",
-                    "Cost Estimation & Budgeting",
-                    "Quality Assurance & Material Selection"
-                ]
-            },
-            "valueEngineering": {
-                title: "Value Engineering",
-                points: [
-                    "Identifying cost-saving alternatives in design and materials",
-                    "Life Cycle Cost Analysis (LCCA) for long-term sustainability",
-                    "Value-based material selection and procurement",
-                    "Identifying and mitigating project risks early",
-                    "Enhancing durability and maintainability of infrastructure"
-                ]
-            },
-            "irrigation": {
-                title: "Irrigation Network Planning and Analysis",
-                points: [
-                    "Canal & Pipeline Network Design for efficient water distribution",
-                    "Surface & Subsurface Drainage Planning to prevent waterlogging",
-                    "Micro-Irrigation System Design (Drip & Sprinkler) for water conservation",
-                    "Command Area Development (CAD) for optimal land utilization",
-                    "Watershed & Catchment Area Analysis for sustainable water flow management",
-                    "Hydraulic Modeling & Simulation for canal and pipeline efficiency",
-                    "Design & Rehabilitation of Dams, Barrages, & Weirs",
-                    "Construction & Optimization of Pumping Stations & Reservoirs",
-                    "Flood Risk Assessment & Mitigation Strategies",
-                    "Water Conservation & Groundwater Recharge Planning",
-                    "Rainwater Harvesting & Storage Solutions",
-                    "Integrated Water Resource Management (IWRM)"
-                ]
-            },
-            "intelligentTransport": {
-                title: "Intelligent Transport System",
-                points: [
-                    "Automated Vehicle Counting & Classification (ATCC) using AI",
-                    "Accident & Hazard Prediction Systems for proactive safety measures",
-                    "Speed & Red Light Violation Detection with advanced monitoring",
-                    "Predictive Analytics for Traffic Trends",
-                    "GIS & Remote Sensing for Transport Planning",
-                    "R&D in AI applications of transportation systems"
-                ]
+            "breakpoints": {
+              "320": {
+                "slidesPerView": 1,
+                "spaceBetween": 40
+              },
+              "1200": {
+                "slidesPerView": 2,
+                "spaceBetween": 20
+              }
             }
-        };
+          }
+        </script>
+      <div class="swiper-wrapper">
 
-        // Function to display the selected service details
-        function displayServiceDetails() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const serviceId = urlParams.get("id");
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="img/services/constructions-2.jpg" class="testimonial-img" alt="">
+              <h2 style="color: rgb(238, 124, 10);">Vision</h2>
 
-            // Find the service data based on the passed id
-            const service = servicesData[serviceId];
 
-            if (service) {
-                // Create the content for the service
-                const serviceDetailDiv = document.getElementById("service-detail");
-                let serviceHTML = `
-                    <div class="service-title">${service.title}</div>
-                    <ul>
-                `;
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span style="font-size: 18px;">Deliver comprehensive and innovative
+                  solutions to clients through our
+                  profound experience and valour.
+                  To promote awareness and
+                  attentiveness regarding the
+                  environment, property and human
+                  safety while utilising the road.
+                  To be the technology explorers,
+                  Engineering better products and services
+                  and life. <br>
+                  To be amongst the top 10 global
+                  engineering services companies in
+                  the world</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
 
-                // Loop through the points and add them as list items
-                service.points.forEach(point => {
-                    serviceHTML += `<li>${point}</li>`;
-                });
+        <div class="swiper-slide">
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="img\services\constructions-1.jpg" class="testimonial-img" alt="">
+              <h2 style="color: rgb(238, 124, 10);">Mission</h2>
+              <!-- <h4>Designer</h4>
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div> -->
+              <p>
+                <i class="bi bi-quote quote-icon-left"></i>
+                <span style="font-size: 18px;">To provide our clients with affordable,
+                  individualised, trustworthy, and
+                  creative road safety solutions by
+                  providing independent, high-calibre
+                  professional services with prompt
+                  response times. to contribute to the
+                  evolution of sustainable transport
+                  systems and safer, more effective road
+                  networks. <br>
+                  We want to be the greatest, leading the
+                  way, encouraging genius, exceeding
+                  client expectations, and emerging as
+                  the top project consultant</span>
+                <i class="bi bi-quote quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
 
-                serviceHTML += `</ul>`;
+        ]
 
-                // Display the service details
-                serviceDetailDiv.innerHTML = serviceHTML;
-            } else {
-                // If no matching service, display a message
-                document.getElementById("service-detail").innerHTML = "<p>Service not found.</p>";
-            }
-        }
 
-        // Run the function to display service details when the page loads
-        displayServiceDetails();
-    </script>
 
-</body>
-</html>
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section>
+
+<section id="services" class="constructions section" style="background-color:rgb(2, 2, 46);">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="color: rgb(238, 124, 10);">Our Services</h2>
+   
+  </div><!-- End Section Title -->
+
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/highways.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title" >Highways, Urban Roads & Expressways</h4>
+              
+
+                <a href="services.html?id=highways" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/railways.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Railways and Airports</h4>
+                <a href="services.html?id=railways" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/road_safety.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Road Safety Audit</h4>
+                <a href="services.html?id=roadSafety" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/architecture.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Architectural Services</h4>
+                <a href="services.html?id=architectural" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+    
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/value.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Value Engineering</h4>
+                <a href="services.html?id=valueEngineering" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+       
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- End Card Item -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/irrigation.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Irrigation Network Planning and Analysis</h4>
+                <a href="services.html?id=irrigation" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <center>
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="card-item">
+          <div class="row">
+            <div class="col-xl-5">
+              <div class="card-bg"><img src="img/services/intelligent.png" alt=""></div>
+            </div>
+            <div class="col-xl-7 d-flex align-items-center">
+              <div class="card-body">
+                <h4 class="card-title">Intelligent Transport System</h4>
+                <a href="services.html?id=intelligentTransport" class="minimal-button" style="font-size: 18px;">Click here to view more details about this service</a>
+        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </center>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="about" class="get-started section" style="background-color:rgb(2, 2, 46);">
+  <div class="container section-title" data-aos="fade-up">
+    <h2 style="color: rgb(238, 124, 10);">More About Us</h2>
+  
+   <p style="color: white; font-size: 20px; text-align: center; line-height: 1.5;text-align: left;">
+  Ethinovia is a multi-disciplined consulting engineering firm with experienced expertise,
+  known for offering engineering and design services with robust technical skills, forward
+  thinking and innovations to deliver high-quality services. Our work has a substantial
+  impact on everyday life with <br>  the design and construction of critical infrastructure, such
+  as roads, bridges, railways, and buildings.
+</p> <br>
+<ul type="square" >
+  <li>
+<p style="color: rgb(238, 124, 10);font-size: 22px ;text-align: left;">
+  Highways and Railways
+</p>
+<p style="color: white;font-size: 20px;text-align: left;">Offers expertise in all phases of project
+  development, from concept planning and
+  design through construction management</p> </li>
+ <li> <p style="color: rgb(238, 124, 10);font: bold ;text-align: left;font-size: 22px;">
+    Structural Engineering
+ </p> 
+  <p style="color: white;font-size: 20px;text-align: left;">Our expertise to plan and create structures
+    (Steel and Concrete) that withstand the
+    stresses of the environment and establish
+    safety.
+  </p> </li>
+ <li> <p style="color: rgb(238, 124, 10);font: bold ;text-align: left;font-size: 22px;">
+    Project Management
+ </p>
+  <p style="color: white;font-size: 20px;text-align: left;">For all types of Civil Engineering projects
+  </p></li>
+</ul>
+
+
+
+</div>
+
+  <!-- <div class="container">
+
+    <div class="row justify-content-center gy-4">
+
+      <div class="col-lg-6 d-flex align-items-center" data-aos="zoom-out" data-aos-delay="100">
+        <div class="content">
+          <h3 style="color:rgb(238, 124, 10);">More About Us</h3>
+          <p style="color: white;font-size: 20px;">Our work has a substantial impact on
+            everyday life with the design and
+            construction of critical infrastructure, such
+            as roads, bridges, railways and buildings
+          </p>
+        
+          <h8 style="color: rgb(238, 124, 10);">
+            Highways and Railways
+          </h8>
+          <p style="color: white;font-size: 20px;">Offers expertise in all phases of project
+            development, from concept planning and
+            design through construction management</p>
+
+         <h8 style="color: rgb(238, 124, 10);">
+            Structural Engineering
+          </h8> 
+          <p style="color: white;font-size: 20px;">Our expertise to plan and create structures
+            (Steel and Concrete) that withstand the
+            stresses of the environment and establish
+            safety.
+          </p>
+
+          <h8 style="color: rgb(238, 124, 10);">
+            Project Management
+          </h8>
+          <p style="color: white;font-size: 20px;">For all types of Civil Engineering projects
+          </p>
+
+   
+      </div>
+      
+    </div> -->
+
+
+
+    <div class="container section-title" data-aos="fade-up">
+      <h2 style="color: rgb(238, 124, 10);">Our Promise</h2>
+      <p style="color: white;font-size: 20px; text-align: left;">"Our team of experienced
+        Engineers strive to deliver optimal
+        and innovative solutions for  all  
+        your Buildings and Highway 
+        infrastructure requirements in 
+        timely manner"</p>
+    </div>
+
+
+</section>
+
+<footer id="contact" class="footer dark-background">
+  <div class="container footer-top">
+    <div class="row gy-4">
+    
+      <div class="col-lg-4 col-md-6 footer-about">
+        <a href="#home" class="logo d-flex align-items-center">
+           
+        </a>
+        <span class="sitename"><img src="img/logo.jpg" alt="" height="100px"></span>
+        
+        <div class="footer-contact pt-3">
+          <p>No. 8A</p>
+          <p>EMG Nagar 3rd Street, K.Pudur</p>
+          <p>Madurai, Tamil Nadu 625007</p>
+          
+          <p class="mt-3"><strong>Phone:</strong> <span><a href="tel:+91-984-0395635">+91-984-0395635</a></span> <span>OR</span> <span><a href="tel:+91-836-7366802">+91-836-7366802</a></span> </p>
+         
+          <p><strong>Email:</strong> <span><a href="mailto:ethinoviaconsultants@gmail.com">ethinoviaconsultants@gmail.com</a></span></p>
+        </div>
+      </div>
+
+      <!-- New div for Useful Links, move this to the right -->
+      <div class="col-lg-4 col-md-6 footer-links">
+       
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#our_company">Our Company</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="social-links d-flex mt-4">
+          <a href="mailto:ethinoviaconsultants@gmail.com"><i class="bi bi-envelope"></i></a>
+         <a href="tel:+91-984-0395635"><i class="bi bi-telephone"></i></a>
+
+       
+          <a href="https://linkedin.com/in/ethinoviaconsultants-pvt-ltd-78649532b"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Preloader -->
+    <div id="preloader"></div>
+
+      <!-- preset JS Files -->
+      <script src="preset/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="preset/php-email-form/validate.js"></script>
+      <script src="preset/aos/aos.js"></script>
+      <script src="preset/glightbox/js/glightbox.min.js"></script>
+      <script src="preset/imagesloaded/imagesloaded.pkgd.min.js"></script>
+      <script src="preset/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="preset/swiper/swiper-bundle.min.js"></script>
+      <script src="preset/purecounter/purecounter_vanilla.js"></script>
+    
+      <!-- Main JS File -->
+      <script src="js/main.js"></script>
+    
+    
+    
+    </body>
+    
+    </html>
+    
